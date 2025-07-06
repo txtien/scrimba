@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --red: #e63946;
+  --light: #f1faee;
+  --aqua: #a8dadc;
+  --light-blue: #457b9d;
+  --dark-blue: #1d3557;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+#header {
+  width: 100dvw;
+  height: 100dvh;
+  background-image: url("./saigon.webp");
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+#header h1 {
+  background-color: black;
+  color: var(--light);
+  padding: 4px 12px;
+  border-radius: 8px;
+}
+
+#header h2 {
+  background-color: var(--light-blue);
+  color: var(--light);
+  padding: 4px 16px;
+  border-radius: 8px;
+  max-width: 600px;
+  text-align: center;
+}
+
+#activities-section {
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0;
+}
+
+#activities-section #activities {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+#activities .activity {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 0 1.5rem;
+}
+
+#activities .activity-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+#guide-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#guide-section #guide {
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem 0.5rem;
+  background-color: var(--aqua);
+  border-radius: 8px;
+  box-shadow: 0px 8px 0px var(--dark-blue);
+}
+
+#guide-section #guide img {
+  width: 250px;
+  height: 400px;
+  object-fit: cover;
+}
+
+#guide-section #guide #guide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  #header {
+    height: 50dvh;
+  }
+
+  #header h2 {
+    max-width: 90%;
+  }
+
+  #activities-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  #activities-section #activities {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #guide-section {
+    padding: 2rem;
+  }
+
+  #guide-section #guide {
+    flex-direction: column;
+    align-items: center;
+  }
+}
